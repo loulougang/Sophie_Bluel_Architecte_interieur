@@ -1,0 +1,545 @@
+  @import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
+
+
+
+  /* ------------------------------------------------------------------------------------------------------------------------------------------- */
+  /* -------------------------------------------------------------------------------------------------------------------------------------- */
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .mes_projets {
+      display: none;
+  }
+
+  .mes_projets.active {
+      display: block;
+  }
+
+  .category {
+      background: none;
+      color: #1D6154;
+      border: 1px solid #1D6154;
+      border-radius: 60px;
+      padding: 10px 15px;
+      font-family: 'Syne';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+
+      cursor: pointer;
+  }
+
+  .category:hover {
+      color: #FFFFFF;
+      background: #1D6154;
+  }
+
+  .categories {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      align-items: center;
+      padding: 50px 0px;
+  }
+
+
+
+  /* ------------------------------------------------------------------------------------------------------------------------------------------- */
+  /* ----------------------------------------------------------------- PAGE  LOGIN --------------------------------------------------------------------- */
+
+  #FormulaireLogin {
+      padding: 20vh;
+  }
+
+  .containerFormulaireLogin {
+      width: 100%;
+      display: flex;
+      left: 530px;
+      top: 242px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .containerFormulaireLogin form {
+      width: 379px;
+  }
+
+  .containerFormulaireLogin h2 {
+      font-family: 'Syne';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 36px;
+      text-align: center;
+      color: #1D6154;
+      margin-bottom: 20px;
+  }
+
+  .containerFormulaireLogin label ,.contentTitreAjoutPhoto label, .contentSelect label  {
+      font-family: 'Work Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      color: #3D3D3D;
+      display: block;
+      margin-bottom: 6px;
+  }
+
+  .containerFormulaireLogin input[type="email"],
+  .containerFormulaireLogin input[type="password"] {
+      width: 100%;
+      height: 36px;
+      background: #FFFFFF;
+      border: 1px solid #E0E0E0;
+      box-sizing: border-box;
+      border-radius: 4px;
+      padding: 10px;
+      margin-bottom: 30px;
+      font-family: 'Work Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      color: #3D3D3D;
+  }
+
+  .divBtnConnexionMdpOublie {
+      text-align: center;
+  }
+
+
+  .divBtnConnexionMdpOublie a {
+      font-family: 'Work Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      text-decoration-line: underline;
+      margin-bottom: 20px;
+      color: black;
+  }
+
+  .btnConnexion {
+      width: 179px;
+      height: 36px;
+      background: #1D6154;
+      border-radius: 60px;
+      font-family: 'Syne';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      text-align: center;
+      color: #FFFFFF;
+      display: block;
+      margin: 0px auto 28px auto;
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+
+  }
+
+  .btnConnexion:hover {
+      transform: scale(1.05);
+      background-color: #147a6f;
+      cursor: pointer;
+  }
+
+  .afficheMsgErreur {
+      text-align: center;
+  }
+
+  #informationIncorrect {
+      font-family: 'Work Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      color: #FF0000;
+      display: block;
+      margin-bottom: 28px;
+  }
+
+  input:invalid {
+      animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) both;
+  }
+
+  @keyframes shake {
+
+      10%,
+      90% {
+          transform: translate3d(-1px, 0, 0);
+      }
+
+      20%,
+      80% {
+          transform: translate3d(2px, 0, 0);
+      }
+
+      30%,
+      50%,
+      70% {
+          transform: translate3d(-4px, 0, 0);
+      }
+
+      40%,
+      60% {
+          transform: translate3d(4px, 0, 0);
+      }
+  }
+
+
+  /* ------------------------------------------------------------------------------------------------------------------------------------------- */
+  /* ----------------------------------------------------------------- PAGE HOME ADMIN --------------------------------------------------------------------- */
+
+
+  .navAdmin {
+      background: #000000;
+      display: flex;
+      justify-content: center;
+      padding: 25px 0px;
+      color: white;
+  }
+
+  .BtnEdit {
+      display: flex;
+      padding: 0px 21px;
+      align-items: center;
+      gap: 8px;
+  }
+
+  .BtnEdit span {
+      font-family: 'Work Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      text-align: center;
+      color: #FFFFFF;
+      cursor: pointer;
+  }
+
+  .BtnEdit button {
+      padding: 11px 23px;
+      border-radius: 60px;
+      font-size: 14px;
+      font-family: 'Work Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      cursor: pointer;
+  }
+
+  .modif-text {
+      padding-bottom: 20px;
+  }
+
+  .modif-image {
+      margin-left: 10%;
+      margin-top: 3%;
+  }
+
+  .modif_filtre {
+      color: black;
+      font-size: 16px;
+
+  }
+
+
+
+  #portfolio h2 {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      align-items: center;
+  }
+
+  .modif_filtre span,
+  .modif-image span,
+  .modif-text span {
+      padding: 0px 7px;
+      cursor: pointer;
+  }
+
+  /* ------------------------------------------------------------------------------------------------------------------------------------------- */
+  /* ----------------------------------------------------------------- PAGE HOME MODAL --------------------------------------------------------------------- */
+
+
+  .modal {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.3);
+      overflow: auto;
+  }
+
+  .modalHeader {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+  }
+
+  .modalHeaderAjout {
+      flex-direction: row-reverse;
+  }
+
+  .close {
+      cursor: pointer;
+  }
+
+
+  .modalBody h2 {
+      font-family: 'Work Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 26px;
+      line-height: 30px;
+      text-align: center;
+      color: #000000;
+      margin-bottom: 41px;
+  }
+
+  /* Style pour la zone de contenu de la galerie */
+  .modalContent {
+      padding: 20px;
+      width: 630px;
+      height: auto;
+      margin: 7% auto;
+      background-color: white;
+      border-radius: 10px;
+  }
+
+  /* Style pour les images de la galerie */
+  .gallery img {
+      display: block;
+      max-width: 100%;
+      margin-bottom: 20px;
+  }
+
+  /* Style pour les titres de la galerie */
+  .gallery figcaption {
+      font-weight: bold;
+      margin-bottom: 10px;
+  }
+
+  .galerieModal,
+  .modalForm {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      width: 423px;
+      margin: auto;
+  }
+
+  .imgContainer img {
+      width: 78.88px;
+      height: 105.34px;
+  }
+
+  .imgContainer p {
+      font-family: 'Work Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      cursor: pointer;
+  }
+
+  .fa-trash-can,
+  .fa-arrows-up-down-left-right {
+      position: absolute;
+      font-size: 10px;
+      color: white;
+  }
+
+
+  .imgContainer {
+      position: relative;
+      cursor: pointer;
+  }
+
+
+ .grand-icon {
+    display: none !important;
+    cursor: pointer;
+ }
+ .imgContainer:hover .grand-icon {
+    display: block !important;
+    cursor: pointer;
+ }
+ .style-delect-icon {
+    cursor: pointer;
+ }
+
+
+ .divIconContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(58px, 9px);
+}
+.afficherToutLeMonde{
+    display: block !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-17px, 0px);
+    display: none !important;
+}
+
+
+
+
+
+  .fa-trash-alt:before,
+  .fa-trash-can:before,
+  .fa-arrows-up-down-left-right:before,
+  .fa-arrows:before {
+      content: "\f2ed";
+      background: #000000;
+      border-radius: 2px;
+      padding: 2px;
+  }
+
+  .divBtnModal, .contentBtnModal2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .divBtnModal hr , .contentBtnModal2 hr{
+      width: 420px;
+      height: 0px;
+      margin-top: 57px;
+      margin-bottom: 38px;
+      border: 1px solid #B3B3B3;
+  }
+
+  .divBtnModal button {
+      width: 237px;
+      height: 36px;
+      background: #1D6154;
+      border-radius: 60px;
+      color: white;
+      order: 2;
+      margin-bottom: 23px;
+      font-family: 'Syne';
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      cursor: pointer;
+  }
+
+  .divBtnModal a {
+      font-family: 'Syne';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      color: #D65353;
+      cursor: pointer;
+      order: 2;
+  }
+
+
+
+
+  /* ------------------------------------------------------------------------------------------------------------------------------------------- */
+  /* ----------------------------------------------------------------- PAGE HOME MODAL 2--------------------------------------------------------------------- */
+
+
+  .contentAjout {
+    background: #E8F1F7;
+    border-radius: 3px;
+    width: 420px;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    padding: 20px 0px;
+  }
+
+ /*  .imgChangement {
+    width: 70px;
+    height: 90px;
+    object-fit: cover;
+} */
+
+  .contentAjout button {
+      background: #CBD6DC;
+      border-radius: 50px;
+      width: 173px;
+      height: 36px;
+      border: none;
+      cursor: pointer;
+      font-family: 'Work Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      color: #306685;
+      margin: 21px auto 7px auto;
+  }
+
+
+  .contentAjout p {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: #444444;
+}
+
+.contentTitreAjoutPhoto label, .contentSelect label {
+    margin-bottom: 10px;
+}
+
+
+.contentTitreAjoutPhoto,.contentSelect{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.contentTitreAjoutPhoto input, .contentSelect select{
+    background: #FFFFFF;
+box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+width: 420px;
+height: 51px;
+border: none;
+}
+
+.contentTitreAjoutPhoto {
+    margin: 21px auto 21px auto;
+}
+
+.contentBtnModal2 button{
+    background: #A7A7A7;
+border-radius: 60px;
+width: 237px;
+height: 36px;
+border: none;
+font-family: 'Syne';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+text-align: center;
+color: #FFFFFF;
+cursor: pointer;
+}
+  .retour {
+      cursor: pointer;
+  }
